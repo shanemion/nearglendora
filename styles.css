@@ -1,0 +1,36 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#header {
+    background-image: url(/images/glendoramountains.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px 20px 0px;
+    color: #A3B18A;
+    text-shadow: 0 0 4px black;
+    
+}
+
+img {
+    width: 100px;
+}
+
+#quote {
+    font-style: italic;
+    border-bottom: 5px;
+    border: 0px auto;
+    margin: 0 auto;
+}

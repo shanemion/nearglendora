@@ -7,12 +7,14 @@ body {
 
 #header {
     background-image: url(../images/glendora4k.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 0px 20px 0px;
+    padding: 100px 0px 100px 0px;
     color: #A3B18A;
-    text-shadow: 0 0 4px black;
-    
+    text-shadow: 1 1 0px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
 }
 
 img {
@@ -22,6 +24,21 @@ img {
 #quote {
     font-style: italic;
     border-bottom: 5px;
-    border: 0px auto;
-    margin: 0 auto;
+    border: none;
+    margin: 4px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: lighter;
+}
+
+#quoter {
+    font-style: italic;
+    border-bottom: 5px;
+    border: none;
+    margin: 4px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: lighter;
 }

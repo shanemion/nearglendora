@@ -108,9 +108,14 @@ section {
     background-position: 50% 50%;
 }
 
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 #subtitle {
     margin: 100px auto 25px auto;
-    padding: 75px 0 0 0;
     color: #FFFBF8;
     font-weight: bold;
     font-size: 80px;

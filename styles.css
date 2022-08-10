@@ -1,24 +1,31 @@
-
+html {
+    scroll-behavior: smooth;
+}
 body {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Italiana', serif;
+    width: clamp(200px, 50%, cover)
+    
 }
 
-#header {
+.header {
     background-image: url(../images/glendora4k.jpg);
     background-size: cover;
-    padding: 100px 0px 100px 0px;
-    color: #A3B18A;
     text-shadow: 1 1 0px black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
 }
 
-img {
-    width: 100px;
+#glendora {
+    color: #A3B18A;
+    background-color: #FFFBF8;
+    border-radius: 10px;
+    padding: 10px;
+    
 }
 
 #quote {
@@ -27,9 +34,10 @@ img {
     border: none;
     margin: 4px;
     padding: 10px;
-    background-color: white;
+    background-color:#3A5A40;
     border-radius: 10px;
     font-weight: lighter;
+    color: white;
 }
 
 #quoter {
@@ -38,24 +46,111 @@ img {
     border: none;
     margin: 4px;
     padding: 10px;
-    background-color: white;
+    background-color:#3A5A40;
     border-radius: 10px;
     font-weight: lighter;
+    color: white;
 }
 
 section {
     height: 100vh;
+    scroll-snap-align: start;
+    justify-content: center;
 
 }
 
-.header {
-    background-image: url(../images/glendora4k.jpg);
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.cafe {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/images/cafe.jpg);
     background-size: cover;
-    padding: 100px 0px 100px 0px;
-    color: #A3B18A;
-    text-shadow: 1 1 0px black;
+
+}
+
+.parks {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/images/park.webp);
+    background-size: cover;
+}
+
+.food {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/images/food.jpg);
+    background-size: cover;
+}
+
+.fun {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/images/gmr.webp);
+    background-size: cover;
+}
+
+.me {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/images/stanford.jpg);
+    background-size: cover;
+    height: 40vh;
+}
+
+#cafe {
+    margin: 50px auto;
+    color: brown;
+    font-weight: bold;
+    background-color: #FFFBF8;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+img {
+    width: 250px;
+}
+.items {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    font-weight: bold;
+}
+
+.format {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px auto 100px auto; 
+    color: white;
+    font-size: 20px;
+}
+
+.sum {
+    font-weight: 700;
+}
+
+.paragraph {
+    font-weight: 300;
 }

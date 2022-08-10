@@ -5,12 +5,17 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: 'Italiana', serif;
-    width: clamp(200px, 50%, cover)
+    width: clamp(300px, 50%, cover)
     
 }
 
 .header {
-    background-image: url(../images/glendora4k.jpg);
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/images/glendora4k.jpg);
     background-size: cover;
     text-shadow: 1 1 0px black;
     display: flex;
@@ -21,36 +26,20 @@ body {
 }
 
 #glendora {
-    color: #A3B18A;
-    background-color: #FFFBF8;
-    border-radius: 10px;
-    padding: 10px;
-    
+    color: #FFFBF8;
+    font-weight: 700;
+    font-size: 100px;
 }
 
 #quote {
     font-style: italic;
-    border-bottom: 5px;
-    border: none;
-    margin: 4px;
-    padding: 10px;
-    background-color:#3A5A40;
-    border-radius: 10px;
-    font-weight: lighter;
-    color: white;
+    color: #FFFBF8;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: -15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#quoter {
-    font-style: italic;
-    border-bottom: 5px;
-    border: none;
-    margin: 4px;
-    padding: 10px;
-    background-color:#3A5A40;
-    border-radius: 10px;
-    font-weight: lighter;
-    color: white;
-}
 
 section {
     height: 100vh;
@@ -73,6 +62,7 @@ section {
     ),
     url(/images/cafe.jpg);
     background-size: cover;
+    margin: auto auto;
 
 }
 
@@ -115,26 +105,49 @@ section {
     url(/images/stanford.jpg);
     background-size: cover;
     height: 40vh;
+    background-position: 50% 50%;
 }
 
-#cafe {
-    margin: 50px auto;
-    color: brown;
+#subtitle {
+    margin: 100px auto 25px auto;
+    color: #FFFBF8;
     font-weight: bold;
-    background-color: #FFFBF8;
-    border-radius: 10px;
-    padding: 10px;
+    font-size: 50px;
+}
+
+#mantra {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 42% 0;
+}
+
+#classic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    
     
 }
 
-img {
+#classone {
     width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 40%;
+    
 }
+
+
 .items {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 
 .format {
@@ -142,15 +155,18 @@ img {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 100px auto 100px auto; 
+    padding: 100px 0 100px 0; 
     color: white;
     font-size: 20px;
 }
 
 .sum {
     font-weight: 700;
+    margin-top: 30px;
 }
 
 .paragraph {
     font-weight: 300;
+    max-width: 70%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

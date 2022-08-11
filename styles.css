@@ -40,12 +40,25 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#aboutme {
+    font-style: italic;
+    color: #FFFBF8;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 
 section {
     height: 100vh;
     scroll-snap-align: start;
     justify-content: center;
+    align-items: center;
 
+}
+
+a {
+    color: #FFFBF8;
 }
 
 .container {
@@ -112,7 +125,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: space-around;
 }
 
 #subtitle {
@@ -130,13 +142,11 @@ section {
     object-position: 42% 0;
 }
 
-#classic {
+#classic, #finkbiner, #bonelli, #southhills, #legendscar, #cabo, #bridge {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    object-fit: cover;
-    
-    
+    object-fit: cover; 
 }
 
 #classone {
@@ -148,6 +158,21 @@ section {
     
 }
 
+#interstate {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 70% 60%;
+}
+
+#marketplace {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 40% 70%;
+}
 
 .items {
     display: flex;
@@ -161,8 +186,8 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    padding: 75px 0 100px 0; 
+    align-items: space-around;
+    padding: 50px 0 100px 0; 
     color: white;
     font-size: 20px;
 }
@@ -176,4 +201,12 @@ section {
     font-weight: 300;
     max-width: 400px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#donutman, #louie {
+    font-style: italic;
+}
+
+.bridge {
+    font-style: italic;
 }
